@@ -1,0 +1,13 @@
+/* .app-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+} */
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
