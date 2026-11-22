@@ -86,11 +86,11 @@ I am aiming for a grade 4. All other requirements are met except routing.
 ### Grade 1
 
 - The applicatin uses components in the implementation
-  - [category-selector](/UnitConverter/src/app/components/category-selector/)
-  - [converter](/UnitConverter/src/app/components/converter/)
-  - [footer](/UnitConverter/src/app/components/footer/)
-  - [header](/UnitConverter/src/app/components/header/)
-  - [unit-selector](/UnitConverter/src/app/components/unit-selector/)
+  - [category-selector](/src/app/components/category-selector/)
+  - [converter](/src/app/components/converter/)
+  - [footer](/src/app/components/footer/)
+  - [header](/src/app/components/header/)
+  - [unit-selector](/src/app/components/unit-selector/)
 - The application installation process works as documented above
 - The application starts up
 
@@ -101,7 +101,7 @@ I am aiming for a grade 4. All other requirements are met except routing.
   - Weight (7 units, with conversions implemented between all of them)
   - Temperature (3 units, with conversions implemented between all of them)
 - Icon displays the currently selected conversion category and the icon is updated automatically when category is changed (see pictures below)
-- Angular [service](/UnitConverter/src/app/services/) is used to implement the conversion operations
+- Angular [service](/src/app/services/) is used to implement the conversion operations
 - Angular material library is used in the UI implementation
   - MatButtonModule
   - MatIconModule
@@ -112,16 +112,16 @@ I am aiming for a grade 4. All other requirements are met except routing.
 
 - Routing (not implemented)
 - Converter category and converter selectors are populated programmatically
-  - [category-selector](/UnitConverter/src/app/components/category-selector/category-selector.html)
+  - [category-selector](src/app/components/category-selector/category-selector.html)
     - Instead of writing out the three categories separately, we iterate through the list returned by the `categories()` function using a for-loop.
       The `category.id` indicates that each category button has its own unique ID, which is used for tracking.
-    - In [converter.ts](/UnitConverter/src/app/components/converter/converter.ts) `categories = CONVERSION_CATEGORIES` that uses [data/conversion-data](/UnitConverter/src/app/data/conversion-data.ts)
+    - In [converter.ts](src/app/components/converter/converter.ts) `categories = CONVERSION_CATEGORIES` that uses [data/conversion-data](/UnitConverter/src/app/data/conversion-data.ts)
     - If a new category is added to the data later, it will appear in the selection list without any HTML changes.
-  - [unit-selector](/UnitConverter/src/app/components/category-selector/category-selector.html)
+  - [unit-selector](src/app/components/category-selector/category-selector.html)
     - Unit selector (converter selector) is implemented using the same logic as category selector
-  - [converter.html](/UnitConverter/src/app/components/converter/converter.html)
+  - [converter.html](src/app/components/converter/converter.html)
 - Reactive programming is used in the application through signals
-  - Signals manage the selected category, selected units, and input value in the [converter](/UnitConverter/src/app/components/converter/converter.ts) component
+  - Signals manage the selected category, selected units, and input value in the [converter](src/app/components/converter/converter.ts) component
   - When a signal's value changes, Angular automatically updates the parts of the UI that depend on it. This keeps the UI synchronized with the application state without requiring manual updates.
     - When the user selects a different category, the `selectedCategory` signal is updated, and the available units change automatically.
     - When the user selects a different input or output unit, the corresponding signal is updated.
@@ -129,7 +129,7 @@ I am aiming for a grade 4. All other requirements are met except routing.
 
 ## Screenshot
 
-![App screenshot](/UnitConverter/public/screenshot.png)
+![App screenshot](/public/screenshot.png)
 
 ## Application components and their responsibilities
 
@@ -160,9 +160,9 @@ Displays additional information about the application.
 ## Extra features
 
 - Unit tests
-  - [category-selector.spec.ts](/UnitConverter/src/app/components/category-selector/category-selector.spec.ts)
-  - [unit-selector.spec.ts](/UnitConverter/src/app/components/unit-selector/unit-selector.spec.ts)
-  - [conversion.spec.ts](/UnitConverter/src/app/services/conversion.spec.ts)
+  - [category-selector.spec.ts](/src/app/components/category-selector/category-selector.spec.ts)
+  - [unit-selector.spec.ts](/src/app/components/unit-selector/unit-selector.spec.ts)
+  - [conversion.spec.ts](/src/app/services/conversion.spec.ts)
 
 ## Use of AI
 
