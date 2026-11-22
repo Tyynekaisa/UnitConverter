@@ -115,7 +115,7 @@ I am aiming for a grade 4. All other requirements are met except routing.
   - [category-selector](src/app/components/category-selector/category-selector.html)
     - Instead of writing out the three categories separately, we iterate through the list returned by the `categories()` function using a for-loop.
       The `category.id` indicates that each category button has its own unique ID, which is used for tracking.
-    - In [converter.ts](src/app/components/converter/converter.ts) `categories = CONVERSION_CATEGORIES` that uses [data/conversion-data](/UnitConverter/src/app/data/conversion-data.ts)
+    - In [converter.ts](src/app/components/converter/converter.ts) `categories = CONVERSION_CATEGORIES` that uses [data/conversion-data](src/app/data/conversion-data.ts)
     - If a new category is added to the data later, it will appear in the selection list without any HTML changes.
   - [unit-selector](src/app/components/category-selector/category-selector.html)
     - Unit selector (converter selector) is implemented using the same logic as category selector
@@ -163,6 +163,7 @@ Displays additional information about the application.
   - [category-selector.spec.ts](/src/app/components/category-selector/category-selector.spec.ts)
   - [unit-selector.spec.ts](/src/app/components/unit-selector/unit-selector.spec.ts)
   - [conversion.spec.ts](/src/app/services/conversion.spec.ts)
+  - [app.spec.ts](/src/app/app.spec.ts)
 
 ## Use of AI
 
