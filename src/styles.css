@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/css?family=Fauna+One|Montserrat|Great+Vibes';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fauna One', serif;
+  background-color: #c5d9dd;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: 'Fauna One', serif;
+}

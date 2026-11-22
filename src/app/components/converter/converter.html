@@ -1,0 +1,51 @@
+<div class="converter">
+  <app-category-selector
+    class="category-selector"
+    [categories]="categories"
+    [selectedCategoryId]="selectedCategory().id"
+    (categorySelected)="selectCategory($event)"
+  />
+
+  <div class="conversion-inputs">
+    <div class="selected-category">
+      <mat-icon>{{ selectedCategory().icon }}</mat-icon>
+    </div>
+    <h2>Convert {{ selectedCategory().name }}</h2>
+    <div>
+      <label for="input-value">Value: </label>
+      <input
+        id="input-value"
+        type="number"
+        [value]="inputValue()"
+        (input)="updateInputValue($any($event.target).value)"
+      />
+    </div>
+
+    <div>
+      <label>Convert from</label>
+      <app-unit-selector
+        [units]="selectedCategory().units"
+        [selectedUnitId]="fromUnit().id"
+        (unitSelected)="selectFromUnit($event)"
+      />
+    </div>
+
+    <div>
+      <label>Convert to</label>
+
+      <app-unit-selector
+        [units]="selectedCategory().units"
+        [selectedUnitId]="toUnit().id"
+        (unitSelected)="selectToUnit($event)"
+      />
+    </div>
+
+    <button mat-stroked-button (click)="convert()">Convert</button>
+
+    @if (result() !== null) {
+      <div class="conversion-result">
+        <h2>Result: {{ result() }} {{ toSymbol() }}</h2>
+      </div>
+    }
+  </div>
+</div>
