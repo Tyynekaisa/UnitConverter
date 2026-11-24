@@ -2,7 +2,7 @@
 
 Course: **AT00BY22 Kehykset**  
 Author: **Kaisa Juhola**  
-Updated: **22.11.2026**
+Updated: **24.11.2026**
 
 ## About project
 
