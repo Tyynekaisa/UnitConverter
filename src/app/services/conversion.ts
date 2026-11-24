@@ -1,3 +1,6 @@
+// conversion.ts
+// Conversion service implements the conversion operations
+
 import { Injectable } from '@angular/core';
 
 @Injectable({

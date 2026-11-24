@@ -38,20 +38,4 @@ describe('Conversion', () => {
     const result = service.convert(NaN, 'meters', 'miles', 'distance');
     expect(result).toBeNaN();
   });
-
-  // it('should convert meters to miles', () => {
-  //   const result = service.metersToMiles(1000);
-  //   expect(result).toBeCloseTo(0.621371, 5);
-  // });
-
-  // it('should return input value when from and to units are the same', () => {
-  //   const value = 42;
-  //   const result = service.identityConversion(value);
-  //   expect(result).toBe(value);
-  // });
-
-  // it('should return NaN for invalid input', () => {
-  //   const result = service.metersToMiles(NaN);
-  //   expect(result).toBeNaN();
-  // });
 });

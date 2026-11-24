@@ -1,3 +1,4 @@
+// category-selector.ts
 import { Component, input, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';

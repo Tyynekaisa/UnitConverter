@@ -2,11 +2,7 @@
   <h2>Select category</h2>
 
   <div class="category-list">
-    <!-- The converter category and converter selectors are populated programmatically (not hard-coded) -->
-
-    <!-- Instead of writing out the three categories separately, 
-    let's iterate through the list returned by the `categories()` function using a for-loop. 
-    The `category.id` indicates that each category button has its own unique ID, which is used for tracking. -->
+    <!-- The converter categories are populated programmatically -->
     @for (category of categories(); track category.id) {
       <button
         mat-stroked-button

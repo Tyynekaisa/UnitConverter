@@ -1,3 +1,4 @@
+// converter.ts
 import { Component, signal, inject } from '@angular/core';
 import { CategorySelector } from '../category-selector/category-selector';
 import { UnitSelector } from '../unit-selector/unit-selector';
@@ -18,15 +19,10 @@ export class Converter {
   private conversionService = inject(Conversion);
 
   selectedCategory = signal<ConversionCategory>(CONVERSION_CATEGORIES[0]);
-
   fromUnit = signal<ConversionUnit>(CONVERSION_CATEGORIES[0].units[0]);
-
   toUnit = signal<ConversionUnit>(CONVERSION_CATEGORIES[0].units[1]);
-
   toSymbol = signal<string>(CONVERSION_CATEGORIES[0].units[1].symbol);
-
   inputValue = signal<number>(1);
-
   result = signal<number | null>(null);
 
   selectCategory(category: ConversionCategory): void {

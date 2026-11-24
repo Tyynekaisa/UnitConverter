@@ -2,6 +2,7 @@
   <mat-form-field>
     <mat-label>Unit</mat-label>
     <mat-select [value]="selectedUnitId()" (selectionChange)="selectUnit($event.value)">
+      <!-- The converter selectors are populated programmatically -->
       @for (unit of units(); track unit.id) {
         <mat-option [value]="unit.id"> {{ unit.name }} ({{ unit.symbol }}) </mat-option>
       }

@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
+// app.ts
+// Angular Unit Converter
+// Anna-Kaisa Juhola
 
-import { CategorySelector } from './components/category-selector/category-selector';
+import { Component } from '@angular/core';
 import { Converter } from './components/converter/converter';
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
-import { ConversionCategory } from './models/converter.model';
-import { CONVERSION_CATEGORIES } from './data/conversion-data';
 
 @Component({
   selector: 'app-root',

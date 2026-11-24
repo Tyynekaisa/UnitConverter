@@ -81,7 +81,11 @@ ng test
 
 ## Requirements and Grading
 
-I am aiming for a grade 4. All other requirements are met except routing.
+I am aiming for a grade 4.
+
+All requirements for grade 3 have been implemented.  
+2/3 of grade 5 requirements (dynamic population of selectors and reactive programming) has also been implemented.  
+Routing has not been implemented.
 
 ### Grade 1
 
@@ -127,9 +131,16 @@ I am aiming for a grade 4. All other requirements are met except routing.
     - When the user selects a different input or output unit, the corresponding signal is updated.
     - When the user enters a new value, the `inputValue` signal is updated.
 
-## Screenshot
+## Screenshots
 
-![App screenshot](/public/screenshot.png)
+![Unit converter: distance](/public/screenshot_dist.png)  
+Image 1. Unit converter: Distance
+
+![Unit converter: weight](/public/screenshot_weight.png)  
+Image 2. Unit converter: Weight
+
+![Unit converter: temperature](/public/screenshot_temp.png)  
+Image 3. Unit converter: Temperature
 
 ## Application components and their responsibilities
 

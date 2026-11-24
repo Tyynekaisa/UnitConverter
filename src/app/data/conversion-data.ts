@@ -1,3 +1,4 @@
+// conversion-data.ts
 import { ConversionCategory } from '../models/converter.model';
 
 export const CONVERSION_CATEGORIES: ConversionCategory[] = [
